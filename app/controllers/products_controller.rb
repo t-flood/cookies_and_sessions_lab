@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
 
   def add
     cart << product_params
-    redirect_to '/'
+    render 'index'
   end
 
   private
